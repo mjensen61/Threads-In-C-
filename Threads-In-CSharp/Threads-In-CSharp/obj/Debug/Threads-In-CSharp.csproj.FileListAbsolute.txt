@@ -1,0 +1,11 @@
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\obj\Debug\Threads-In-CSharp.csproj.AssemblyReference.cache
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\obj\Debug\Threads-In-CSharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\obj\Debug\Threads_In_CSharp.Form1.resources
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\obj\Debug\Threads_In_CSharp.Properties.Resources.resources
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\obj\Debug\Threads-In-CSharp.csproj.GenerateResource.cache
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\obj\Debug\Threads-In-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\bin\Debug\Threads-In-CSharp.exe.config
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\bin\Debug\Threads-In-CSharp.exe
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\bin\Debug\Threads-In-CSharp.pdb
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\obj\Debug\Threads-In-CSharp.exe
+C:\Users\mike\Nextcloud\Development\CSharp\Threads-In-C#\Threads-In-CSharp\Threads-In-CSharp\obj\Debug\Threads-In-CSharp.pdb
