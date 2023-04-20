@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonThread1 = new System.Windows.Forms.Button();
             this.buttonThread2 = new System.Windows.Forms.Button();
             this.buttonThread3 = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.textBoxThread3 = new System.Windows.Forms.TextBox();
             this.textBoxThread4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // buttonThread1
@@ -125,6 +127,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 300;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +166,7 @@
         private System.Windows.Forms.TextBox textBoxThread3;
         private System.Windows.Forms.TextBox textBoxThread4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

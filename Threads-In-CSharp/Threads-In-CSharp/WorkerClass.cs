@@ -13,14 +13,16 @@ namespace Threads_In_CSharp
         public string Name = "Unnamed";
         private bool isRunning = false;
         int i = 1;
+        int waittime = 1000;
 
         private Thread thread;
         private ManualResetEvent resetEvent = new ManualResetEvent(true);
 
         // Create a class constructor for the Car class
-        public WorkerClass()
+        public WorkerClass(int milliseconds)
         {
             thread = new Thread(MainWorkerTread);
+            //thread.IsBackground = true;
         }
 
         public bool RunningState()
@@ -36,18 +38,19 @@ namespace Threads_In_CSharp
         {
             while (true)
             {
-                for (i = 1; i <= 1000; i++)
+                for (i = 1; i <= 10000000; i++)
                 {
                     Thread.Sleep(1000);
+                    resetEvent.WaitOne();
                 }
-                resetEvent.WaitOne();
             }
         }
-        public void Start()
+        public void Start(int milliseconds)
         {
             // Can only start once
             if (this.ThreadState() == System.Threading.ThreadState.Unstarted)
             {
+                waittime = milliseconds;
                 MessageBox.Show(Name + " Starting");
                 this.isRunning = true;
                 thread.Start();
@@ -64,13 +67,11 @@ namespace Threads_In_CSharp
         {
             // set the reset event which will cause the loop to continue
             this.resetEvent.Set();
-            this.isRunning = true;
+            //this.isRunning = true;
             MessageBox.Show(Name + " Resumed");
         }
         public void Stop()
         {
-            MessageBox.Show(Name + " Stopping...");
-
             // set a flag that will abort the loop
             this.isRunning = false;
 
@@ -78,9 +79,7 @@ namespace Threads_In_CSharp
             this.resetEvent.Set();
 
             // wait for the thread to finish
-            this.thread.Join();
-
-            MessageBox.Show(Name + " Stopped");
+            this.thread.Abort();
         }
 
         public int GetValue()
